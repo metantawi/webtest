@@ -1,0 +1,556 @@
+* Start Golabl Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    border: none;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+button {
+    border: none;
+}
+form input:hover,
+form input {
+    outline: none;
+}
+.conterner { 
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.main-titletext {
+    text-align: center;
+}
+.main-titletext h2 {
+    font-size: 35px;
+    text-transform: capitalize;
+    color: var(--main-color-alt);
+    margin-bottom: 10px;
+}
+.main-titletext p {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1.7;
+    margin-bottom: 100px;
+}
+
+/* smaill Scerrns */
+@media (min-width:768px ) {
+    .conterner {
+        width: 750px;
+    }
+    }
+    
+    /* Medium Screens  */
+    @media (min-width : 992px ) {
+    .conterner {
+        width: 970px;
+    }
+    }
+    
+    /* Large Screens */
+    @media (min-width : 1200px ) {
+    .conterner {
+        width: 1170px;
+    }
+    }
+/* End Golabl Rules */
+
+/* Start Header */
+@media (max-width:767px) {
+    .header img {
+            width: 89px;
+    }
+}
+.header nav li {
+display: block;
+color: var(--main-color);
+font-size: 17px;
+padding: 40px 15px;
+transition: var(--main-transition);
+font-weight: 500;
+}
+.header nav li a {
+    color: var(--main-color);
+}
+.header nav li a:hover {
+color: var(--main-color-alt);
+}
+.header nav .lig {
+    border: 2px solid var(--main-color);
+    background-color: transparent;
+    padding: 10px 19px;
+    border-radius: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.header nav .re {
+background-color: var(--main-color);
+color: white;
+padding: 10px 20px;
+font-weight: 500;
+border-radius: 25px;
+}
+/* End Header */
+
+/* Start Mobile Header */
+.header nav .bar {
+    color: var(--main-color);
+    font-size: 22px;
+}
+@media (min-width:768px) {
+    .header nav .bar {
+        display: none;
+    }
+}
+@media (max-width:767px) {
+    .header nav ul {
+        display: none;
+        color: white;
+    }
+    .header nav .bar:hover+ul {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        position: absolute;
+        top: 9%;
+        left: 0;
+        width: 100%;
+        background-color: var(--main-color);
+        z-index: 1000;
+    }
+        }
+        
+@media (max-width:767px) {
+    .header .links {
+        display: none;
+    }
+}
+
+@media (max-width:767px) {
+    .header nav li a {
+        color: white;
+    }
+    .header nav li a:hover {
+        color: var(--main-color-alt);
+        border-bottom: 1px solid var(--main-color-alt);
+    }
+    .header nav li {
+        padding: 35px 15px;
+    }
+}
+/* End Mobile Header */
+
+
+/* Start Landing */
+.landing {
+    padding-top: var(--main-padding-top );
+    padding-bottom: var(--main-padding-bottom);
+}
+.landing .all img {
+    position: relative;
+    width: 400px;
+    animation: topas 5s linear infinite;
+}
+
+@media (max-width:767px) {
+    .landing .all img {
+        margin-top: 50px;
+        width: 350px;
+        margin-bottom: -42px;
+    }
+    .landing .links {
+        display: flex;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .landing .all .info {
+        font-size: 40px;
+    }
+}
+
+@keyframes topas {
+    0%,
+    100% {
+        top: 0;
+}
+50% {
+        top: -20px;
+    }
+}
+
+.landing .all .info h2 {
+    font-size: 65px;
+    color: var(--main-color-alt);
+}
+@media (max-width:767px) {
+    .landing .all .info h2 {
+        font-size: 40px;
+        margin-bottom: 68px;
+    }
+}
+@media (max-width:767px) {
+    .landing-tow .all .links {
+        display: flex;
+    font-size: 13px;
+    margin-top: 36px;
+    }
+}
+.landing .links .videmo {
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 16px;
+}
+@media (max-width:767px) {
+    .landing .links .videmo {
+        font-size: 13px;
+    }
+}
+
+.landing .links .icon {
+    background-color: var(--main-color);
+    padding: 15px 18px;
+    border-radius: 100%;
+    color: white;
+    font-size: 21px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.landing-tow {
+    padding-top: var(--main-padding-top );
+    padding-bottom: var(--main-padding-bottom);
+}
+.landing-tow .all img {
+    width: 44%;
+    margin-right: 100px;
+}
+@media (max-width:767px) {
+    .landing-tow .all img {
+        width: 82%;
+    margin-bottom: 27px;
+    margin-right: 0;
+    }
+}
+.landing-tow .info .number {
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 20px;
+    MARGIN-LEFT: 15PX;
+}
+/* End Landing */
+
+/* Start Clients */
+.clients .items .item {
+    border: 1px solid #ccc;
+    padding: 100px 0;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+@media (max-width:767px) {
+    .clients .items .item {
+        padding: 55px 0;
+    }
+}
+.clients .items .item:not(:last-of-type) {
+    border-right: none;
+    width: 100%;
+}
+.clients .items .item i:hover {
+    position: relative;
+    top: -21px;
+    transition: 0.3s;
+}
+
+@media (max-width:767px) {
+    .clients .item h3 {
+        font-size: 12px;
+    }
+}
+.clint .all p {
+    max-width: 400px;
+}
+.clint .all h2 {
+    line-height: 1.4;
+}
+.clint .all .images {
+    width: 200px;
+    align-items: center;
+}
+/* End Clients */
+
+/* Start Work */
+.work {
+    padding-bottom: var(--main-padding-bottom);
+}
+.work .boxes {
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.work .box h4 {
+    margin: auto;
+    background-color: white;
+    width: fit-content;
+    padding: 30px;
+    margin-bottom: 42px;
+    border-radius: 50%;
+    font-size: 28px;
+    color: var(--main-color);
+    box-shadow: 0px 0px 20px 10px #dddddd73;
+}
+.work .box h2 {
+    font-size: 13px;
+    margin-top: -20px;
+}
+.work .box p {
+max-width: 300px;
+padding-top: 5px;
+}
+.work .box .active {
+    background-color: var(--main-color);
+    color: white;
+    border: 5px solid white;
+}
+.work .activeity {
+    position: relative;
+    top: -59px;
+}
+@media (max-width:767px) {
+    .work .activeity {
+        top: 0;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    .work .boxes {
+        margin-top: -73px;
+    }
+}
+/* End Work */
+
+
+.futsher {
+    padding-bottom: var(--main-padding-bottom);
+}
+.futsher .box {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.futsher .box i {
+    font-size: 48px;
+    color: var(--main-color);
+}
+.futsher .box h2 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.futsher .box p {
+max-width: 400px;
+line-height: 1.4;
+}
+/* End Work */
+
+/* Start Prices */
+.price .boxes .box {
+    padding: 38px 52px 25px;
+    border-radius: 17px;
+    box-shadow: 0px 0px 20px 10px #ececec;
+}
+.price .boxes {
+    grid-gap: 0;
+}
+@media (min-width : 1200px) {
+    .price .activ {
+        z-index: 1;
+        margin-bottom: -25px;
+        margin-top: -25px;
+        border-top: 3px solid var(--main-color);
+        border-bottom: 3px solid var(--main-color);
+    }
+}
+@media (max-width:767px) {
+    .price .boxes {
+        grid-gap: 30px;
+    }
+}
+.price .list {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+.price .list:first-of-type {
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+.price .box h5 {
+    font-size: 40px;
+    color: #777;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.price .box h6 {
+    border: 2px solid #eee;
+    border-radius: 31px;
+    padding: 15px 30px;
+    font-size: 11px;
+    width: fit-content;
+    margin: 20px auto;
+    margin-bottom: 28px;
+}
+.price .list i {
+margin-right: 10px;
+}
+.price .box .icon {
+    font-size: 65px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.price .boxes .center {
+    text-align: center;
+}
+.price .boxes .end button a {
+    text-transform: uppercase;
+}
+.price .boxes .end button {
+    background-color: transparent;
+    padding: 18px 54px;
+    display: block;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    transition: 0.3s;
+    margin: 20px auto;
+    cursor: pointer;
+    font-weight: 500;
+}
+.price .boxes .end button:hover {
+    background-color: var(--main-color);
+}
+.price .boxes .end .acasdtiv {
+    background-color: var(--main-color);
+    font-weight: 600;
+    display: block;
+    margin-top: 65px;
+}
+.price .boxes .end button:hover a {
+    color: white;
+}
+/* End Prices */
+
+/* Start Says */
+.says .info-tow img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid var(--main-color);
+    padding: 4px;
+    margin-right: 10px;
+}
+.say .text {
+    border-left: 1px solid var(--main-color);
+    padding-left: 10px;
+}
+/* End Says */
+
+/* Start Our */
+.our .boxes .box img {
+    width: 349px;
+    transition: var(--main-transition);
+}
+.our .boxes .box img:hover {
+    opacity: 0.5;
+}
+.our .boxes .box {
+    padding: 13px;
+    background-color: white;
+    margin-right: 10px;
+}
+.our .box .info h2{
+    text-transform: uppercase;
+}
+.our .box .info p {
+    color: #777;
+}
+.our .boxes .icons {
+    box-shadow: -2px 6px 20px 0px #eaeaea;
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    top: -24px;
+}
+.our .boxes .icons i {
+    font-size: 19px;
+    padding: 13px 28px;
+    color: var(--main-color);
+}
+.our .boxes .icons i:hover {
+    color: var(--main-color-alt);
+}
+.our .boxes .icons a:not(:last-of-type) {
+    border-right: 1px solid #ccc;
+}
+/* End Our */
+
+/* Start Fotter */
+@media (max-width:767px) {
+    .div-tow h2 {
+        margin-top: 52px;
+    }
+}
+.fotter .div-one img {
+    width: 160px;
+}
+.fotter .div-one p {
+    max-width: 500px;
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+.fotter .div-one .icons-socail a  {
+    color: var(--main-color-alt);
+    font-size: 16px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    padding: 11px 14px;
+    margin-right: 6px;
+    transition: var(--main-transition);
+}
+.fotter .div-one .icons-socail a:hover {
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    color: white;
+}
+.fotter .div-tow .box {
+    margin-bottom: 20px;
+}
+.fotter .div-tow .icons i {
+    margin-right: 10px;
+    color: var(--main-color);
+}
+.fotter .box .number {
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 22px;
+    margin-top: 10px;
+}
+/* End Fotter */
